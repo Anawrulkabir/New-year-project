@@ -70,6 +70,7 @@
   line-height: 107px;
   text-align: center;
   color: var(--red);
+  margin-bottom: 48px;
 }
 .deal {
   font-size: 24px;
@@ -77,4 +78,12 @@
   line-height: 29px;
   text-align: center;
   color: var(--red);
+  margin-bottom: 16px;
+}
+.catagory {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+  margin-bottom: 48px;
 }

@@ -45,6 +45,7 @@
   margin: 40px 140px;
   border-radius: 30px;
   background-color: #0d010150;
+  background-image: linear-gradient(to bottom, #0000006f, #f9f8f705);
   position: absolute;
   top: 0;
 }
@@ -98,6 +99,7 @@
   width: 1320px;
   height: 600px;
   margin: 0px 48px 140px 140px;
+  position: absolute;
 }
 .mid-night-party-linear-gradiant {
   width: 1320px;
@@ -105,9 +107,8 @@
   margin: 0px 48px 140px 140px;
   border-radius: 20px;
   background-color: black;
-  background: linear-gradient(to right, rgba(7, 2, 17, 1), rgba(7, 2, 17, 0));
+  background: linear-gradient(to right, #000000, #d6d6d600);
   position: absolute;
-  top: 0;
 }
 
 .mid-night-party {
@@ -119,10 +120,12 @@
   margin: 126px 126px;
   color: var(--white);
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .mid-night-party-image {
   width: 320px;
+  position: relative;
+  z-index: 4;
 }
 .welcome-to,
 .midnight-party {
@@ -157,4 +160,22 @@
 }
 .mid-night-party-image {
   margin: 68px 138px 67px 10px;
+}
+
+/* adress section */
+.adress-section {
+}
+.red-text {
+  color: var(--red);
+}
+.address-section-content {
+  width: 1320px;
+  height: 482px;
+  margin: 120px 140px 120px 140px;
+  background-color: plum;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(248, 118, 248, 0.254),
+    #efdae900
+  );
 }

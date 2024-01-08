@@ -214,6 +214,129 @@
   border-radius: 10px;
 }
 
+/* Coming soon section */
+.title {
+  color: var(--red);
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.coming-soon-text h2 {
+  color: #070211;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+.coming-soon-section .description {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  width: 393px;
+}
+
+.coming-soon-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 140px;
+}
+.coming-soon-text {
+  display: flex;
+  flex-direction: column;
+}
+.new-year {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+}
+.new-year h1 {
+  color: var(--red);
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.new-year p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 43px;
+}
+.new-year img {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.red-circle {
+  width: 450px;
+  height: 450px;
+  flex-shrink: 0;
+  background: var(--red);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white-circle {
+  width: 430px;
+  height: 430px;
+  flex-shrink: 0;
+  background: var(--white);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* holydaysale-section */
+.holydaysale-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px;
+}
+.holydaysale-section .title {
+  color: #070211;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.holydaysale-section .mark {
+  color: #f00;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 72px;
+
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+.holydaysale-section .des {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+
+  font-weight: 500;
+  line-height: 32px;
+  margin: 28px 266px 64px 266px;
+}
+
 /* portfolio section */
 .portfolio-section {
   margin-top: 500px;

@@ -1,27 +1,62 @@
+/* Universal property */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
+/* 
+
+
+
+
+*/
 /* Variable color */
 :root {
   --red: #ff0000;
   --white: #ffffff;
 }
-/* Header section */
-.banner {
-  font-family: 'Merriweather', sans-serif;
-  background-image: url('images/Banner\ Image.png');
-  background-repeat: no-repeat;
-  width: 1320px;
-  height: 600px;
-  margin: 40px 140px;
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* 
+
+
+
+
+*/
+
+/* ........Header section....... */
+
+.header-section {
+  width: auto; /* set width to auto */
+  height: 600px; /* height 600px is OK */
+  margin: 48px 70px; /* margin is OK */
+
   position: relative;
 }
+.banner {
+  color: var(--white);
+  font-family: 'Merriweather', sans-serif;
+  position: relative;
+  top: 120px;
+}
+.banner-image {
+  position: absolute; /* no need to set image height */
+  top: 0;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+
+  height: 518px;
+  border-radius: 20px;
+
+  background-color: #0d01010b;
+  background-image: linear-gradient(
+    to bottom,
+    #000000d0,
+    rgba(255, 255, 255, 0)
+  );
+}
+
 .banner-content {
   position: relative;
   z-index: 4;
@@ -39,20 +74,20 @@
   font-weight: 900;
   line-height: 95px;
 }
-.shadow {
-  width: 1320px;
-  height: 600px;
-  margin: 40px 140px;
-  border-radius: 30px;
-  background-color: #0d010150;
-  background-image: linear-gradient(to bottom, #0000006f, #f9f8f705);
-  position: absolute;
-  top: 0;
-}
+/* 
 
-/* Offer Section  */
+
+
+
+
+
+*/
+/* ........Offer Section.......  */
 .offer-section {
-  margin: 120px 400px;
+  width: auto; /* set width to auto */
+  height: 807px; /* height 600px is OK */
+  margin: 48px 200px; /* margin is OK */
+
   font-family: 'Inter', sans-serif;
 }
 .offer-section h1,
@@ -61,9 +96,7 @@
   text-align: center;
 }
 .offer-section img {
-  width: 802.9px;
   height: 500px;
-  top: 1076px;
 }
 .discount {
   font-size: 88px;
@@ -88,51 +121,75 @@
   text-align: center;
   margin-bottom: 48px;
 }
+/* 
 
-/* Mid Night Party Section */
+
+
+
+
+
+*/
+/* ......Mid Night Party Section...... */
 .mid-night-party-main {
-  position: relative;
-  margin-bottom: 48px;
-}
-.mid-night-party {
-  background-image: url('images/midnight-party.png');
-  background-repeat: no-repeat;
-  width: 1320px;
-  height: 600px;
-  margin: 0px 48px 140px 140px;
-  position: absolute;
-  border-radius: 20px;
-}
-.mid-night-party-linear-gradiant {
-  width: 1320px;
-  height: 600px;
-  margin: 0px 48px 140px 140px;
-  border-radius: 20px;
-  background-color: black;
-  background: linear-gradient(to right, #000000, #d6d6d600);
-  position: absolute;
-}
+  width: auto; /* set width to auto */
+  height: 600px; /* height 600px is OK */
+  margin: 48px 70px; /* margin is OK */
 
+  border-radius: 20px;
+  /* background: #ff0000; */
+  position: relative;
+}
 .mid-night-party {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.mid-night-party-linear-gradiant {
+  height: 519px;
+
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+
+  background-color: #0d01010b;
+  background-image: linear-gradient(
+    to right,
+    #000000d0,
+    rgba(255, 255, 255, 0)
+  );
+}
+.mid-night-party-div-image {
+  width: auto;
+  height: 600px;
+  position: absolute;
+  top: 0;
 }
 
 .midnight-party-description {
-  width: 700px;
-  margin: 126px 126px;
+  margin-left: 126px;
   color: var(--white);
   position: relative;
   z-index: 2;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  margin-top: 50px;
 }
 .mid-night-party-image {
-  width: 320px;
+  width: auto;
+  height: 420.662px;
   position: relative;
   z-index: 2;
 }
 .welcome-to,
 .midnight-party {
   font-family: 'Merriweather', sans-serif;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 900;
   line-height: 88px;
   letter-spacing: 0.11em;
@@ -150,44 +207,61 @@
   margin-top: 24px;
   border: none;
   background-color: var(--red);
-  color: white;
-  margin-left: 18px;
+  width: 142px;
+  margin-left: 12px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
+  padding: 12px;
   border-radius: 30px;
+  position: relative;
+  left: 0;
 }
 .mid-night-party-image {
   margin: 68px 138px 67px 10px;
 }
+/* 
 
+
+
+
+
+
+
+*/
 /* join-now-section */
 
 .purple-box {
-  width: 1320px;
+  width: auto;
   height: 600px;
-  margin-left: 140px;
-  margin-top: 900px;
+  margin: 48px;
+
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   background-color: #bd21c050;
   background-image: linear-gradient(
     to bottom,
     rgba(253, 117, 13, 0.46),
     rgba(255, 255, 255, 0.425)
   );
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
+/* .purple-gradiant {
+  width: auto;
+  height: 600px;
+  margin: 48px;
+  position: absolute;
+  top: 0;
+} */
 .red-text {
   color: var(--red);
   font-family: 'Inter', sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
   line-height: 56px;
 }
@@ -195,9 +269,9 @@
   color: black;
   font-family: 'Inter', sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
   line-height: 56px;
+  text-align: center;
 }
 .join-now-place {
   margin-top: 20px;
@@ -212,9 +286,28 @@
   text-align: center;
   padding: 25px 40px;
   border-radius: 10px;
+  width: 200px;
 }
 
 /* Coming soon section */
+.coming-soon-section {
+  width: auto;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 48px;
+  align-items: center;
+}
+.coming-soon-text {
+  padding: 25px;
+}
+
+.new-year {
+  display: block;
+  text-align: left;
+  margin-right: 30px;
+}
+
 .title {
   color: var(--red);
   text-align: left;
@@ -239,12 +332,6 @@
   width: 393px;
 }
 
-.coming-soon-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 48px 140px;
-}
 .coming-soon-text {
   display: flex;
   flex-direction: column;
@@ -301,6 +388,14 @@
   justify-content: center;
 }
 
+/* 
+
+
+
+
+
+*/
+
 /* holydaysale-section */
 .holydaysale-section {
   display: flex;
@@ -313,9 +408,8 @@
   color: #070211;
   font-family: Inter;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  text-align: center;
   margin-bottom: 16px;
 }
 .holydaysale-section .mark {
@@ -332,44 +426,60 @@
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
-
   font-weight: 500;
   line-height: 32px;
-  margin: 28px 266px 64px 266px;
+  margin: 0px 125px;
 }
 
 /* discount-img-section */
+
 .one {
   display: flex;
   flex-direction: row;
 }
 .discount-img-section {
-  margin-top: 48px;
+  margin: 70px;
   display: flex;
   flex-direction: column;
-  margin-left: 140px;
+  width: auto;
+  height: 600px;
+  position: relative;
 }
 .red-line {
-  position: relative;
-  bottom: 220px;
+  width: auto;
+  position: absolute;
+  height: 230px;
+  top: 433px;
+  z-index: -1;
 }
 .girl {
+  width: auto;
   position: absolute;
-  margin-top: 35px;
-  left: 1031px;
+  height: 430px;
+  right: 0px;
 }
 .gift {
+  width: auto;
   position: relative;
   top: 0px;
-  z-index: 1;
 }
+/* 
 
+
+
+
+
+
+
+
+*/
 /* portfolio section */
 .portfolio-section {
-  margin-top: 0px;
+  margin: 48px 0px;
   position: relative;
   top: 100px;
-  padding: 0px 140px;
+  padding: 0px 48px;
+  width: auto;
 }
 .portfolio-content h4 {
   font-family: 'Inter', sans-serif;
@@ -399,37 +509,46 @@
   margin-bottom: 48px;
 }
 .portfolio-image .first-row img {
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: 380px;
   border-radius: 16px;
   margin: 25px 25px 0px 0px;
 }
 .portfolio-image .second-row img {
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: 380px;
   border-radius: 16px;
   margin: 25px 25px 25px 0px;
 }
+/* 
 
+
+
+
+
+
+
+*/
 /* Newsletter section */
 .newsletter-section {
-  margin: 500px 140px 140px 140px;
+  width: auto;
+  height: 600px;
+  border-radius: 16px;
+  margin: 48px;
+  margin-top: 200px;
 }
 .newsletter-section-div {
   background-color: rgb(241, 166, 166);
-  width: 1320px;
-  height: 616px;
-  border-radius: 16px;
-  /* display: flex;
+  border-radius: 25px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 .letterbox {
   width: 150px;
   height: 150px;
   margin-top: 80px;
-  margin-left: 585px;
 }
 .subscribe {
   font-family: 'Merriweather', sans-serif;
@@ -446,7 +565,8 @@
   text-align: center;
   margin-left: 212px;
   margin-right: 212px;
-  margin-top: 22px;
+  margin-top: 40px;
+  width: 500px;
 }
 .mail-subscribe {
   display: flex;
@@ -485,25 +605,43 @@
   background-color: var(--red);
   color: var(--white);
 }
+/* 
 
+
+
+
+
+
+
+*/
 /* footer section */
 .foot {
-  height: 600px;
+  width: auto;
+  height: 500px;
   background-color: #000000;
   color: var(--white);
+  margin-top: 150px;
 }
 .contact-details {
-  margin: 120px 140px;
+  /* margin: 60px 70px; */
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-left: 200px;
+  padding-bottom: 60px;
+}
+.contact-details .adr {
+  margin-top: 35px;
+  line-height: 25px;
 }
 .contacts {
   display: flex;
   flex-direction: column;
-  margin-right: 140px;
-  margin-top: 120px;
+  margin-right: 30px;
+  margin-top: 70px;
   margin-bottom: 30px;
+  margin-left: 300px;
 }
 .contacts > div {
   display: flex;
@@ -524,10 +662,9 @@
   text-align: left;
 }
 .contact-details > p {
-  width: 375px;
   height: 80px;
-  margin-left: 140px;
-  margin-top: 120px;
+  /* margin-left: 140px;
+  margin-top: 120px; */
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -535,16 +672,23 @@
   line-height: 30px;
 }
 .social-icon {
+  width: auto;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
   margin: 48px 0px;
 }
+.social-icon > img {
+  width: auto;
+  height: 50px;
+}
+
 hr {
+  width: 80%;
   color: rgba(255, 255, 255, 0.15);
   border: solid 1px;
-  width: 1320px;
   margin-left: 140px;
 }
 .ARR-unsubscribe {
@@ -556,5 +700,6 @@ hr {
   margin-left: 140px;
 }
 .p2 {
-  margin-right: 140px;
+  margin-right: 40px;
+  margin-left: 600px;
 }
